@@ -1,20 +1,4 @@
 <Query Kind="Program">
-  <Connection>
-    <ID>70b773cb-1918-4303-a4bb-c7669363764f</ID>
-    <NamingServiceVersion>2</NamingServiceVersion>
-    <Persist>true</Persist>
-    <Driver Assembly="(internal)" PublicKeyToken="no-strong-name">LINQPad.Drivers.EFCore.DynamicDriver</Driver>
-    <ConvertUnderscoresToPascal>true</ConvertUnderscoresToPascal>
-    <Server>127.0.0.1</Server>
-    <UserName>root</UserName>
-    <Password>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnVl7zVfSiUeEtlsMNjDZIAAAAAACAAAAAAAQZgAAAAEAACAAAACh64ijpj/USaFqNxSonA5cg70uqfKGEm452HlDoufd9QAAAAAOgAAAAAIAACAAAADiEe2JUHHACLyic6w2pPrZ2uRM6em7bJV3Qfhr0phRXRAAAACyiCx9FqRNt++rPcxvba83QAAAAFRLmZgvbBIwkJDmJQhtdLrUVM9SPGDNGNBMlZTOahq+Ve64bgXruoi9a8DH9vCTrokyH2ZxdZbXDcpT0PLzqvA=</Password>
-    <Database>gdfy</Database>
-    <DriverData>
-      <PreserveNumeric1>True</PreserveNumeric1>
-      <EFProvider>Pomelo.EntityFrameworkCore.MySql</EFProvider>
-      <Port>3306</Port>
-    </DriverData>
-  </Connection>
   <NuGetReference>Newtonsoft.Json</NuGetReference>
   <Namespace>Newtonsoft.Json</Namespace>
   <Namespace>System.Threading.Tasks</Namespace>
@@ -35,6 +19,11 @@ void Main(string[] args)
 	Task.Run(() =>
 	{
 		GetName(2);
+	});
+
+	Task.Run(() =>
+	{
+		GetName(5);
 	});
 
 	Console.ReadLine();

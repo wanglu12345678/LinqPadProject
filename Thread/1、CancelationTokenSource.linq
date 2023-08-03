@@ -20,6 +20,7 @@ async void Main()
 		int i=0;
 		while(true)
 		{
+			Console.WriteLine("正在执行");
 			if(cancelToken.IsCancellationRequested) break;
 			i++;
 			await Task.Delay(300);
@@ -28,7 +29,9 @@ async void Main()
 			{
 				Console.WriteLine("准备结束循环");
 				cancelTokenSource?.Cancel();  //结束任务
+				Console.WriteLine("意外执行");
 			}
+			
 		}
 		
 		Console.WriteLine("结束任务-----------------------");

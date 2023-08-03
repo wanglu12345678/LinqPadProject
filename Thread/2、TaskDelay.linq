@@ -21,6 +21,8 @@ void Main()
 		
 		Console.WriteLine("结束执行~~~~~~");
 	});
+	
+	Console.WriteLine("最终执行~~~~~~");
 }
 
 public class TestClass

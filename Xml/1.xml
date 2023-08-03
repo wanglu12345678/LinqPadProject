@@ -1,0 +1,10 @@
+<Response>
+	<ResultCode>0</ResultCode>
+	<ResultMsg>预结算成功</ResultMsg>
+	<MZJE>800.00</MZJE>
+	<MTCZF>400.00</MTCZF>
+	<MZHZF>97.95</MZHZF>
+	<MXJZF>302.05</MXJZF>
+	<MZHYE>0.00</MZHYE>
+	<MYYCD>0.00</MYYCD>
+</Response> 
