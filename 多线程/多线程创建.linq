@@ -5,7 +5,7 @@
 async void Main()
 {
 	Console.WriteLine("主线程id："+Thread.CurrentThread.ManagedThreadId);
-	DoSomeThing3();
+	DoSomeThing2();
 }
 
 public async Task DoSomeThing()
@@ -47,5 +47,4 @@ public async Task DoSomeThing3()
 			Console.WriteLine(i);
 		});
 	});
-	
 }

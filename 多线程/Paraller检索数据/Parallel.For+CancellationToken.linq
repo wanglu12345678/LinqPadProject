@@ -20,13 +20,12 @@ private void Test()
 		Parallel.For(1, 10000000, new ParallelOptions { CancellationToken = _token }, (i) =>
 		{
 			totalCount+=1;
-			if (i == 854511)
+			if (i == 54275)
 			{
 				cacelTokenSource.Cancel();
 				Console.WriteLine($"已获取到结果：{i}");
 				Console.WriteLine($"总共检索：{totalCount}次");
 			}
-			Task.Delay(1000);
 			//Console.WriteLine($"当前线程：{Thread.CurrentThread.ManagedThreadId},当前值：{i}");
 		});
 	});
